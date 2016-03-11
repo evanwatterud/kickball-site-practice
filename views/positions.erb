@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LACKP</title>
+    <link rel="stylesheet" href="/stylesheets/home.css">
+  </head>
+
+  <body>
+    <h1>Kickball Positions</h1>
+
+    <ul>
+      <% @positions.each do |position| %>
+        <li><a href="/positions/<%= position %>"><%= position %></a></li>
+      <% end %>
+    </ul>
+  </body>
+</html>
